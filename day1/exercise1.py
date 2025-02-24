@@ -3,7 +3,11 @@
 sum = 0
 
 while True:
-    x = input("Value :")
+    try:
+        x = input("Value :")
+    except KeyboardInterrupt:
+        print(x)
+        continue
     
     if x == "0":
         break
